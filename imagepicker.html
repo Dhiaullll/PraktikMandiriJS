@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image picker</title>
+    <style>
+      .pict {
+        width: 50%;
+        height: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>IMAGE PICKER</h1>
+    <select id="selectOne" onchange="myImage()">
+      <option value="Kupu-kupu">Kupu-kupu</option>
+      <option value="Kucing">Kucing</option>
+      <option value="Harimau">Harimau</option>
+      <option value="Zebra">Zebra</option>
+      <option value="Capung">Capung</option>
+      <option value="Burung Hantu">Burung Hantu</option>
+      <option value="Lumba-lumba">Lumba-lumba</option>
+      <option value="Bunglon">Bunglon</option>
+    </select>
+    <div id="demo"></div>
+
+    <script>
+      function myImage() {
+        var x = document.getElementById("selectOne").value;
+
+        if (x == "Kupu-kupu") {
+          Kupukupu = document.getElementById("demo").innerHTML =
+            '<img class="pict" src="img/Kupu-kupu.jpg">';
+          window.alert("Ini gambar " + x);
+        }
+        if (x == "Kucing") {
+          Kucing = document.getElementById("demo").innerHTML =
+            '<img class="pict" src="img/Kucing.jpg">';
+          window.alert("Ini gambar " + x);
+        }
+        if (x == "Harimau") {
+          Harimau = document.getElementById("demo").innerHTML =
+            '<img class="pict" src="img/Harimau.jpg">';
+          window.alert("Ini gambar " + x);
+        }
+        if (x == "Zebra") {
+          Zebra = document.getElementById("demo").innerHTML =
+            '<img class="pict" src="img/Zebra.jpg">';
+          window.alert("Ini gambar " + x);
+        }
+        if (x == "Capung") {
+          Capung = document.getElementById("demo").innerHTML =
+            '<img class="pict" src="img/Capung.jpg">';
+          window.alert("Ini gambar " + x);
+        }
+        if (x == "Burung Hantu") {
+          BurungHantu = document.getElementById("demo").innerHTML =
+            '<img class="pict" src="img/Burunghantu.jpeg">';
+          window.alert("Ini gambar " + x);
+        }
+        if (x == "Lumba-lumba") {
+          Lumbalumba = document.getElementById("demo").innerHTML =
+            '<img class="pict" src="img/Lumba-lumba.jpg">';
+          window.alert("Ini gambar " + x);
+        }
+        if (x == "Bunglon") {
+          Bunglon = document.getElementById("demo").innerHTML =
+            '<img class="pict" src="img/Bunglon.jpg">';
+          window.alert("Ini gambar " + x);
+        }
+      }
+    </script>
+  </body>
+</html>
